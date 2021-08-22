@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OnLineShop</string>
+    <string name="shop">Shop</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shop_online">Shop OnLine</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_with_one_of_the_following_options">Sign up with one of the following options</string>
+    <string name="or">ـــــــــــــــــــــــــــ Or ـــــــــــــــــــــــــــ</string>
+    <string name="email">Email</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login"> LogIn</string>
+</resources>
