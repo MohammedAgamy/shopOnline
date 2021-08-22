@@ -59,6 +59,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         {
             case R.id.login_l:
                 navController.navigate(R.id.action_loginFragment2_to_signUpFragment3);
+                getActivity().finish();
                 break;
         }
 
