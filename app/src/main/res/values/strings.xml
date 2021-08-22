@@ -6,6 +6,8 @@
     <string name="shop_online">Shop OnLine</string>
     <string name="sign_up">Sign Up</string>
     <string name="sign_up_with_one_of_the_following_options">Sign up with one of the following options</string>
+    <string name="log_in_with_one_of_the_following_options">Login with one of the following options</string>
+
     <string name="or">ـــــــــــــــــــــــــــ Or ـــــــــــــــــــــــــــ</string>
     <string name="email">Email</string>
     <string name="already_have_an_account">Already have an account?</string>

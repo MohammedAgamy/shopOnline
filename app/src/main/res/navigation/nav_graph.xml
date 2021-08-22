@@ -2,4 +2,24 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"/>
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment2">
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.example.onlineshop.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment2_to_signUpFragment3"
+            app:destination="@id/signUpFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment3"
+        android:name="com.example.onlineshop.ui.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment3_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+</navigation>

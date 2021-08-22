@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <data>
-
-    </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         tools:context=".ui.SignUpFragment">
 
         <ImageView
@@ -190,7 +185,7 @@
             app:boxCornerRadiusBottomStart="@dimen/_20sdp"
             app:boxCornerRadiusTopStart="@dimen/_20sdp"
             app:boxCornerRadiusTopEnd="@dimen/_20sdp"
-            app:endIconMode="clear_text"
+            app:endIconMode="password_toggle"
             android:layout_marginTop="@dimen/_10sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -243,4 +238,3 @@
             app:layout_constraintTop_toBottomOf="@+id/button" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
