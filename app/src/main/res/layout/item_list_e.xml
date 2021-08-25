@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:elevation="@dimen/_20sdp"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/_25sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_e"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_70sdp"
+        app:civ_border_width="0dp"
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@drawable/stave"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/name_use_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steve rogers"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image_e"
+        app:layout_constraintStart_toEndOf="@+id/profile_image_e"
+        app:layout_constraintTop_toTopOf="@+id/profile_image_e" />
+
+    <TextView
+        android:id="@+id/name_nk_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="Captain America"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image_e"
+        app:layout_constraintEnd_toEndOf="@+id/name_use_e"
+        app:layout_constraintStart_toStartOf="@+id/name_use_e"
+        app:layout_constraintTop_toBottomOf="@+id/name_use_e" />
+
+    <ImageView
+        android:id="@+id/imageView_cat_e"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/shell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_e" />
+
+    <ImageView
+        android:id="@+id/fivorat_e"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/lover"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@color/white"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_cat_e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <TextView
+            android:id="@+id/cat_name_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Captain America's  shield"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cat_det_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#747474"
+            android:text="Made in 1943 "
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="@+id/cat_name_e"
+            app:layout_constraintStart_toStartOf="@+id/cat_name_e"
+            app:layout_constraintTop_toBottomOf="@+id/cat_name_e" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="250,00$"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cat_name_e"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.514" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

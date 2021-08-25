@@ -1,5 +1,6 @@
 package com.example.onlineshop.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,6 +12,7 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.onlineshop.R;
@@ -20,6 +22,7 @@ import org.jetbrains.annotations.NotNull;
 public class LoginFragment extends Fragment implements View.OnClickListener {
     TextView mSignUp ;
     private NavController navController;
+    Button goHomeLogin ;
 
 
     @Override
@@ -46,6 +49,9 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
     {
         mSignUp=view.findViewById(R.id.login_l);
         mSignUp.setOnClickListener(this);
+        goHomeLogin=view.findViewById(R.id.button_login);
+        goHomeLogin.setOnClickListener(this);
+
 
         //navController to OnClick
         navController = Navigation.findNavController(view);
@@ -59,8 +65,12 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         {
             case R.id.login_l:
                 navController.navigate(R.id.action_loginFragment2_to_signUpFragment3);
-                getActivity().finish();
                 break;
+
+            case R.id.button_login:
+                startActivity(new Intent(getActivity(), Home.class));
+                break;
+
         }
 
     }

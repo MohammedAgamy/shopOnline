@@ -12,4 +12,5 @@
     <string name="email">Email</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="login"> LogIn</string>
+    <string name="explore">Explore</string>
 </resources>
